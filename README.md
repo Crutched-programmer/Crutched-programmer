@@ -5,21 +5,21 @@
 
 
 
-<h2> Here is what I have one so far...</h2>
-<h3>🧠 AI Control Hub</h3>
-<p>Multi-modal AI system built on Streamlit + Sarvam AI. Perceives inputs, reasons over context, and orchestrates actions across software and hardware.</p>
+<h2> Here is what I have done so far...</h2>
+<h3>🧠 Fully custom web ui for Sarvam AI</h3>
+<p>I have built a fully custom web based UI using Streamlit that runs Sarvam AI. It supports many functionalities and features like audio processing, document intelligence, TTS, STT, and support for Indian languages ( including audio transcriptions and TTS)</p>
 <div><span class="tag">Streamlit</span><span class="tag">Sarvam AI</span><span class="tag">Multi-modal</span></div>
 
-<h3>🐚 AI Command Shell</h3>
-<p>Intelligent CLI that predicts intent, corrects execution paths, and augments developer workflows in real time. Powered by Sarvam AI.</p>
+<h3>🐚 Sashell - Shell + AI</h3>
+<p>I used the Sarvam API to power the shell and scan for any mistakes in the commands ( spelling errors to dangerous commands ). It also has a chat interface that has a retro CLI look to it. It supports the same TTS capabilities as the Web UI project with support for many voices and Indian languages</p>
 <div><span class="tag">Python</span><span class="tag">Sarvam AI</span><span class="tag">CLI</span></div>
 
-<h3>🎛️ Modular Input System</h3>
-<p>Hardware abstraction layer that adapts any physical interface — buttons, knobs, sensors — into programmable digital control. MIDI, HID, and macros, fully extensible.</p>
+<h3>🎛️ Modular Midi Device</h3>
+<p>This is an experimental project currently on hold as of March 2026. The project aims at using multiple io expander modules that communicate with a microcontroller (Atmega 32U4) over i2c to allow me to create a modular USB input device for both macros and MIDI</p>
 <div><span class="tag">Hardware</span><span class="tag">MIDI</span><span class="tag">HID</span></div>
 
 <h3>🎮 Interactive Game Engine</h3>
-<p>Compact system modelling physics, interaction, and engagement through efficient real-time computation. Focused and purpose-built.</p>
+<p>This is a retro console themed retro games launcher with many retro games and themes along with save files functionality. Thid is also on hold as of March 2026</p>
 <div><span class="tag">Game Engine</span><span class="tag">Real-time</span><span class="tag">Physics</span></div>
 
 <h3>👓 Smart Glasses</h3>
