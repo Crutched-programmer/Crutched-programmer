@@ -2,7 +2,8 @@
 <h1>Hey, I'm Crutched_programmer 👋</h1>
 <h2>Builder · Systems Thinker · Making things that perceive, reason, and act</h2>
 
-<hr>![8 bit cat GIF by hoppip](https://github.com/user-attachments/assets/762d41bf-ce82-4ab7-bfac-d6add94b0e62)</hr>
+<img width="1255" height="699" alt="Screenshot 2026-03-20 142246" src="https://github.com/user-attachments/assets/64688bed-8f9b-422a-b44e-11847c7c927f" />
+
 
 
 <h3>🧠 AI Control Hub</h3>
