@@ -1,43 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>GitHub Profile README</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  body {
-    font-family: 'Inter', sans-serif;
-    max-width: 720px;
-    margin: 48px auto;
-    padding: 0 24px;
-    background: #0d1117;
-    color: #c9d1d9;
-    line-height: 1.7;
-  }
-  h1 { font-size: 26px; font-weight: 600; color: #e6edf3; margin-bottom: 4px; }
-  h2 { font-size: 13px; font-weight: 500; color: #8b949e; margin: 0 0 28px; }
-  h3 { font-size: 14px; font-weight: 600; color: #e6edf3; margin: 20px 0 4px; }
-  p  { font-size: 13.5px; color: #8b949e; margin: 0 0 6px; }
-  hr { border: none; border-top: 1px solid #21262d; margin: 32px 0; }
-  .tag {
-    display: inline-block;
-    font-size: 11px;
-    padding: 2px 8px;
-    border-radius: 12px;
-    background: #161b22;
-    border: 1px solid #30363d;
-    color: #8b949e;
-    margin-right: 6px;
-    margin-top: 6px;
-  }
-</style>
-</head>
-<body>
 
 <h1>Hey, I'm Crutched_programmer 👋</h1>
 <h2>Builder · Systems Thinker · Making things that perceive, reason, and act</h2>
 
-<hr>
+<hr>![8 bit cat GIF by hoppip](https://github.com/user-attachments/assets/762d41bf-ce82-4ab7-bfac-d6add94b0e62)</hr>
+
 
 <h3>🧠 AI Control Hub</h3>
 <p>Multi-modal AI system built on Streamlit + Sarvam AI. Perceives inputs, reasons over context, and orchestrates actions across software and hardware.</p>
@@ -75,6 +41,3 @@
   &nbsp;·&nbsp;
   💬 Discord: <span style="color:#c9d1d9">Crutched_programmer#9040</span>
 </p>
-
-</body>
-</html>
