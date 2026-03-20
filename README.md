@@ -23,15 +23,15 @@
 <div><span class="tag">Game Engine</span><span class="tag">Real-time</span><span class="tag">Physics</span></div>
 
 <h3>👓 Smart Glasses</h3>
-<p>Wearable assistive interface that delivers contextual feedback and system interaction — lightweight and utility-first, without the AR overhead.</p>
+<p>This is a very lightweight, rusty proof of concept of a wearable headset that provides system info, time, notifications. This is yet to become a full blown prototype as I am currently figuring out a 'presentable' optical design than a display taped 25 cm from the eye.</p>
 <div><span class="tag">Wearable</span><span class="tag">Embedded</span><span class="tag">Assistive Tech</span></div>
 
 <h3>📅 Planr</h3>
-<p>AI-powered study timetable app built on Base44. Enter your work, goals, and commitments — the AI builds a personalised schedule that gets everything done while protecting 8 hours of sleep.</p>
+<p>This is a student hub for a student to manage their studies. It uses AI to create study schedules with proper timing for study, homework, commitments and rest all while giving 8 hours of sleep.</p>
 <div><span class="tag">Base44</span><span class="tag">AI</span><span class="tag">Productivity</span><span class="tag">Timetable</span></div>
 
 <h3>🤖 Autonomous Cleaning Robot</h3>
-<p>Proof-of-concept robotics system demonstrating movement, control logic, and task automation. Core mechanics validated — battery optimisation in progress.</p>
+<p>Proof-of-concept simple robot powered by an Atmega 2560 and ultrasonic sensors to be able to manuever around a room while avoiding obstacles, the compact design along with a modular structure allows the user to add on anything. In my case, I attached a mop to the back. The system needs 12v for the motors and the batteries are exensive so the project is on hold as of march 2026 </p>
 <div><span class="tag">Robotics</span><span class="tag">Embedded</span><span class="tag">Automation</span></div>
 
 <hr>
