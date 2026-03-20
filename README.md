@@ -1,11 +1,11 @@
 
 <h1>Hey, I'm Crutched_programmer 👋</h1>
 <h2>Builder · Systems Thinker · Making things that perceive, reason, and act</h2>
-
-<img width="1255" height="699" alt="Screenshot 2026-03-20 142246" src="https://github.com/user-attachments/assets/64688bed-8f9b-422a-b44e-11847c7c927f" />
-
+<img src=https://github.com/user-attachments/assets/7bf803c9-467b-4076-bbfb-f1cc8b57e64b />
 
 
+
+<h2> Here is what I have one so far...</h2>
 <h3>🧠 AI Control Hub</h3>
 <p>Multi-modal AI system built on Streamlit + Sarvam AI. Perceives inputs, reasons over context, and orchestrates actions across software and hardware.</p>
 <div><span class="tag">Streamlit</span><span class="tag">Sarvam AI</span><span class="tag">Multi-modal</span></div>
