@@ -1,9 +1,8 @@
 
 <h1>Hey, I'm Crutched_programmer 👋</h1>
-<h2>Builder · Systems Thinker · Making things that perceive, reason, and act</h2>
+<h2>I am a student and i try to make cool projects related to music, AI and Arduino.</h2>
+
 <img src=https://github.com/user-attachments/assets/7bf803c9-467b-4076-bbfb-f1cc8b57e64b />
-
-
 
 <h2> Here is what I have done so far...</h2>
 <h3>🧠 Fully custom web ui for Sarvam AI</h3>
@@ -19,7 +18,7 @@
 <p>This is a retro console themed retro games launcher with many retro games and themes along with save files functionality. Thid is also on hold as of March 2026</p>
 
 <h3>👓 Smart Glasses</h3>
-<p>This is a very lightweight, rusty proof of concept of a wearable headset that provides system info, time, notifications. This is yet to become a full blown prototype as I am currently figuring out a 'presentable' optical design than a display taped 25 cm from the eye.</p>
+<p>This is a very lightweight, rusty proof of concept of a wearable headset that provides system info, time, notifications. This is yet to become a full blown prototype as I am currently figuring out a 'presentable' optical design than a display taped 25 cm from the eye. 😂</p>
 
 <h3>📅 Planr</h3>
 <p>This is a student hub for a student to manage their studies. It uses AI to create study schedules with proper timing for study, homework, commitments and rest all while giving 8 hours of sleep.</p>
@@ -35,3 +34,4 @@
   &nbsp;·&nbsp;
   💬 Discord: <span style="color:#c9d1d9">Crutched_programmer#9040</span>
 </p>
+<h1> Have a look at my repositories ( atleast the active ones 😅)</h1>
