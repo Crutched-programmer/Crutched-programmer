@@ -1,9 +1,9 @@
 
 <h1>Hey, I'm Crutched_programmer 👋</h1>
-<h2>I am a student and i try to make cool projects related to music, AI and Arduino.</h2>
+<h2>I am a grade 11 CBSE student in Chennai and I try to make cool projects related to music, AI and Arduino.</h2>
 
 <img src=https://github.com/user-attachments/assets/7bf803c9-467b-4076-bbfb-f1cc8b57e64b />
-
+<p>Stay tuned for my next project... an app </p>
 <h2> Here is what I have done so far...</h2>
 <h3>🧠 Fully custom web ui for Sarvam AI</h3>
 <p>I have built a fully custom web based UI using Streamlit that runs Sarvam AI. It supports many functionalities and features like audio processing, document intelligence, TTS, STT, and support for Indian languages ( including audio transcriptions and TTS)</p>
