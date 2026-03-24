@@ -1,5 +1,5 @@
 
-<span style="background-color: #083145;">
+<span style="background-color: #ffffff;">
 <h1 align="center">Hey, I'm Crutched_programmer <img width="64" height="64" src=https://github.com/user-attachments/assets/e77f7418-5c8c-4d06-8da3-fd83849ae6e8 /></h1>
 <p align="center"> AI·Arduino·Music·Web-apps </p>
 <h2>I am a grade 11 CBSE student in Chennai and I try to make cool projects related to music, AI and Arduino.</h2>
