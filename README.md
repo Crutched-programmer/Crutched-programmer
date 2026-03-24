@@ -2,7 +2,9 @@
 <h1 align="center">Hey, I'm Crutched_programmer 👋</h1>
 <p align="center"> AI·Arduino·Music·Web-apps </p>
 <h2>I am a grade 11 CBSE student in Chennai and I try to make cool projects related to music, AI and Arduino.</h2>
-<img src=https://github.com/user-attachments/assets/16d4bdf6-cb9f-43cb-b8c9-48cb07e0977c />
+
+
+<img width="512" height="512" src=https://github.com/user-attachments/assets/e77f7418-5c8c-4d06-8da3-fd83849ae6e8 />
 
 
 <p>Stay tuned for my next project... an app </p>
