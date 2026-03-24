@@ -4,7 +4,7 @@
 <h2>I am a grade 11 CBSE student in Chennai and I try to make cool projects related to music, AI and Arduino.</h2>
 
 
-<img width="512" height="512" src=https://github.com/user-attachments/assets/e77f7418-5c8c-4d06-8da3-fd83849ae6e8 />
+<img width="256" height="256" src=https://github.com/user-attachments/assets/e77f7418-5c8c-4d06-8da3-fd83849ae6e8 />
 
 
 <p>Stay tuned for my next project... an app </p>
