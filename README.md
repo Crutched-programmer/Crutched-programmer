@@ -37,6 +37,10 @@
 
 <img width="745" height="410" alt="Screenshot 2025-04-28 175911" src="https://github.com/user-attachments/assets/841f7c18-5d45-42dc-88d5-0ff59a3906f0" />
 
+<h3>🔉Seekwave: Real time audio wavform generator </h3>
+<p>This is an Arduino based real time waveform generator that takes in audio input from an audio jack and displays a real time waveform of that audio (mono) on an I2c OLED. There are two waves on the image but both are of the same audio.  This is my very first project that actually worked first try without compilation errors!😂</p>
+<img width="958" height="445" alt="Screenshot 2025-04-27 091117" src="https://github.com/user-attachments/assets/4df6a9ec-488d-4526-a092-09cc2bdd0099" />
+
 <hr>
 
 
