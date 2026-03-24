@@ -11,7 +11,7 @@
 <img width="1674" height="1176" alt="Screenshot of Sarvada" src="https://github.com/user-attachments/assets/645eed9a-82f0-4eed-a746-ffc6cdb9cc82" />
 
 
-<h3>🐚 Sashell - Shell + AI</h3>
+<h3>🐚 Sashell, Linux Shell + AI</h3>
 <p>I used the Sarvam API to power the shell and scan for any mistakes in the commands ( spelling errors to dangerous commands ). It also has a chat interface that has a retro CLI look to it. It supports the same TTS capabilities as the Web UI project with support for many voices and Indian languages</p>
 
 <img width="1143" height="722" alt="Screenshot of Sashell" src="https://github.com/user-attachments/assets/b7603c35-2e8d-4074-a755-18bc49164651" />
