@@ -1,8 +1,8 @@
 
-<h1>Hey, I'm Crutched_programmer 👋</h1>
+<h1 align="center">Hey, I'm Crutched_programmer 👋</h1>
 <h2>I am a grade 11 CBSE student in Chennai and I try to make cool projects related to music, AI and Arduino.</h2>
 
-<img src=https://github.com/user-attachments/assets/7bf803c9-467b-4076-bbfb-f1cc8b57e64b />
+<img align="center" src=https://github.com/user-attachments/assets/7bf803c9-467b-4076-bbfb-f1cc8b57e64b />
 <p>Stay tuned for my next project... an app </p>
 <h2> Here is what I have done so far...</h2>
 <h3>🧠 Fully custom web ui for Sarvam AI</h3>
