@@ -1,12 +1,7 @@
 
-<h1 align="center">Hey, I'm Crutched_programmer 👋</h1>
+<h1 align="center">Hey, I'm Crutched_programmer <img width="64" height="64" src=https://github.com/user-attachments/assets/e77f7418-5c8c-4d06-8da3-fd83849ae6e8 /></h1>
 <p align="center"> AI·Arduino·Music·Web-apps </p>
 <h2>I am a grade 11 CBSE student in Chennai and I try to make cool projects related to music, AI and Arduino.</h2>
-
-
-<img width="64" height="64" src=https://github.com/user-attachments/assets/e77f7418-5c8c-4d06-8da3-fd83849ae6e8 />
-
-
 <p>Stay tuned for my next project... an app </p>
 <h2> Here is what I have done so far...</h2>
 <h3>🧠 Sarvada: A fully custom web ui for Sarvam AI</h3>
