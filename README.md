@@ -25,7 +25,8 @@
 
 <h3>👓 Smart Glasses</h3>
 <p>This is a very lightweight, rusty proof of concept of a wearable headset that provides system info, time, notifications. This is yet to become a full blown prototype as I am currently figuring out a 'presentable' optical design than a display taped 25 cm from the eye. 😂</p>
-<img width="777" height="436" alt="Images of the current prototype...yes, those are breadboards straped onto my glasses with glitter tape😂" src="https://github.com/user-attachments/assets/ff099880-304c-408f-abb3-a24593428697" />
+<img width="777" height="436" alt="Images of the current prototype...yes, those are breadboards straped onto my glasses with glitter tape😂" src="https://github.com/user-attachments/assets/9d429595-e590-4a73-be5b-744c1945a3c1" />
+
 
 
 <h3>📅 Planr</h3>
@@ -40,11 +41,9 @@
 
 <h3>🔉Seekwave: Real time audio wavform generator </h3>
 <p>This is an Arduino based real time waveform generator that takes in audio input from an audio jack and displays a real time waveform of that audio (mono) on an I2c OLED. There are two waves on the image but both are of the same audio.  This is my very first project that actually worked first try without compilation errors!😂</p>
-<img width="958" height="445" alt="Screenshot 2025-04-27 091117" src="https://github.com/user-attachments/assets/3cb0b961-a6e4-468c-ba72-c863ae24fe5e" />
+<img width="958" height="445" alt="Screenshot 2025-04-27 091117" src="https://github.com/user-attachments/assets/3f230682-e232-42ae-a359-aef70bf9de93" />
 
 <hr>
-
-
 
 <p>Always building. Always shipping. Open to collabs.</p>
 <p style="margin-top:10px">
