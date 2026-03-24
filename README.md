@@ -31,6 +31,8 @@
 <h3>📅 Planr</h3>
 <p>This is a student hub for a student to manage their studies. It uses AI to create study schedules with proper timing for study, homework, commitments and rest all while giving 8 hours of sleep.</p>
 <img width="2559" height="1439" alt="Screenshot 2026-03-24 202722" src="https://github.com/user-attachments/assets/c207acce-1a4c-4f3c-a33c-8fc2fd8935d6" />
+
+
 <h3>🤖 Autonomous Cleaning Robot</h3>
 <p>Proof-of-concept simple robot powered by an Atmega 2560 and ultrasonic sensors to be able to manuever around a room while avoiding obstacles, the compact design along with a modular structure allows the user to add on anything. In my case, I attached a mop to the back. The system needs 12v for the motors and the batteries are exensive so the project is on hold as of march 2026 </p>
 
@@ -38,9 +40,10 @@
 
 <h3>🔉Seekwave: Real time audio wavform generator </h3>
 <p>This is an Arduino based real time waveform generator that takes in audio input from an audio jack and displays a real time waveform of that audio (mono) on an I2c OLED. There are two waves on the image but both are of the same audio.  This is my very first project that actually worked first try without compilation errors!😂</p>
-<img width="958" height="445" alt="Screenshot 2025-04-27 091117" src="https://github.com/user-attachments/assets/4df6a9ec-488d-4526-a092-09cc2bdd0099" />
+<img width="958" height="445" alt="Screenshot 2025-04-27 091117" src="https://github.com/user-attachments/assets/3cb0b961-a6e4-468c-ba72-c863ae24fe5e" />
 
 <hr>
+
 
 
 <p>Always building. Always shipping. Open to collabs.</p>
