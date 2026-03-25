@@ -1,6 +1,6 @@
 
 
-<h1 style="font-size: 50px;">Hey, I'm Crutched_programmer <img width="64" height="64" src=https://github.com/user-attachments/assets/e77f7418-5c8c-4d06-8da3-fd83849ae6e8 /></h1>
+<h1 style="font-size: 64px;" align="center" >Hey, I'm Crutched_programmer <img width="64" height="64" src=https://github.com/user-attachments/assets/e77f7418-5c8c-4d06-8da3-fd83849ae6e8 /></h1>
 
 
 <p align="center"> AI·Arduino·Music·Web-apps </p>
