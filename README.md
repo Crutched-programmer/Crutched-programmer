@@ -7,13 +7,14 @@
 <h2>I am a grade 11 CBSE student in Chennai and I try to make cool projects related to music, AI and Arduino.</h2>
 <p>Stay tuned for my next project... an app </p>
 <h2> Here is what I have done so far...</h2>
+
 <h3>🧠 Sarvada: A fully custom web ui for Sarvam AI</h3>
 <p>I have built a fully custom web based UI using Streamlit that runs Sarvam AI. It supports many functionalities and features like audio processing, document intelligence, TTS, STT, and support for Indian languages ( including audio transcriptions and TTS)</p>
 <img width="1674" height="1176" alt="Screenshot of Sarvada" src="https://github.com/user-attachments/assets/645eed9a-82f0-4eed-a746-ffc6cdb9cc82" />
 
 
 <h3>🐚 Sashell, Linux Shell + AI</h3>
-<p>I used the Sarvam API to power the shell and scan for any mistakes in the commands ( spelling errors to dangerous commands ). It also has a chat interface that has a retro CLI look to it. It supports the same TTS capabilities as the Web UI project with support for many voices and Indian languages</p>
+<p>I used the Sarvam API to power a shell tht can translate english commands into linux commands ( check the repo's README.md for demo video ) that can be run. it can also scan for any mistakes in the commands ( from spelling errors to dangerous commands ). It also has a chat interface that has a retro CLI look to it. It supports the same TTS capabilities as the Web UI project with support for many voices and Indian languages and a fallback voice using pyttsx3</p>
 
 <img width="1143" height="722" alt="Screenshot of Sashell" src="https://github.com/user-attachments/assets/b7603c35-2e8d-4074-a755-18bc49164651" />
 
