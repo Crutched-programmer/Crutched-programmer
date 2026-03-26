@@ -16,8 +16,7 @@
 
 <h3>🧠 Sarvada: A fully custom web ui for Sarvam AI</h3>
 <p>I have built a fully custom web based UI using Streamlit that runs Sarvam AI. It supports many functionalities and features like audio processing, document intelligence, TTS, STT, and support for Indian languages ( including audio transcriptions and TTS)</p>
-<img width="1674" height="1176" alt="Screenshot of Sarvada" src="https://github.com/user-attachments/assets/0fb29731-6fb1-49d4-9fe9-579b95a4b7c6" />
-
+<img width="1674" height="1176" alt="Screenshot of Sarvada" src="https://github.com/user-attachments/assets/6649dfde-97e4-47cd-88c4-23be5ddc384f" />
 
 
 
