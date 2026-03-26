@@ -1,6 +1,6 @@
 
 
-<h1 style="font-size: 64px;" align="center" >Hey, I'm Crutched_programmer <img width="64" height="64" src=https://github.com/user-attachments/assets/e77f7418-5c8c-4d06-8da3-fd83849ae6e8 /></h1>
+<h1 style="font-size: 64px;" align="center" >Hey, I'm Crutched_programmer <img width="48" height="48" src=https://github.com/user-attachments/assets/e77f7418-5c8c-4d06-8da3-fd83849ae6e8 /></h1>
 
 
 <p align="center"> AI·Arduino·Music·Web-apps </p>
@@ -20,14 +20,9 @@
 
 
 
-<h3>🎛️ Modular Midi Device</h3>
-<p>This is an experimental project currently on hold as of March 2026. The project aims at using multiple io expander modules that communicate with a microcontroller (Atmega 32U4) over i2c to allow me to create a modular USB input device for both macros and MIDI. I must wait till i can burn 100$ worth of components to experiment with before finalizing on the final prototype...</p>
-
-
-
-<h3>🎮 Interactive Game Engine</h3>
-<p>This is a retro console themed retro games launcher with many retro games and themes along with save files functionality. Thid is also on hold as of March 2026</p>
-<img width="862" height="555" alt="Different shos of the UI" src="https://github.com/user-attachments/assets/267c7ac5-e54d-483d-ae72-96b4b0b03905" />
+<h3>📺 WebTV: A web based TV interface</h3>
+<p>This is a Web based TV interface with website tiles, password lock, discover feature and many more! The GIF below is sped up ( I fit 120 MB worth of video into 9 MB ). You may watch the demo video which will be at a viewable pace. </p>
+<img width="1674" height="1176" alt="Screenshot of Sarvada" src="https://github.com/user-attachments/assets/62c933f5-5bfe-43b4-92a4-af78b0d79788" />
 
 
 
@@ -52,6 +47,13 @@
 <h3>🔉Seekwave: Real time audio wavform generator </h3>
 <p>This is an Arduino based real time waveform generator that takes in audio input from an audio jack and displays a real time waveform of that audio (mono) on an I2c OLED. There are two waves on the image but both are of the same audio.  This is my very first project that actually worked first try without compilation errors!😂</p>
 <img width="958" height="445" alt="Screenshot 2025-04-27 091117" src="https://github.com/user-attachments/assets/3f230682-e232-42ae-a359-aef70bf9de93" />
+
+
+
+<h3>🎛️ Modular Midi Device</h3>
+<p>This is an experimental project currently on hold as of March 2026. The project aims at using multiple io expander modules that communicate with a microcontroller (Atmega 32U4) over i2c to allow me to create a modular USB input device for both macros and MIDI. I must wait till i can burn 100$ worth of components to experiment with before finalizing on the final prototype...</p>
+
+
 
 <hr>
 
