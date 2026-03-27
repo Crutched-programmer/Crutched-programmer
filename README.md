@@ -22,14 +22,13 @@
 
 <h3>📺 WebTV: A web based TV interface</h3>
 <p>This is a Web based TV interface with website tiles, password lock, discover feature and many more! The GIF below is sped up ( I fit 120 MB worth of video into 9 MB ). You may watch the demo video which will be at a viewable pace. </p>
-<img width="1674" height="1176" alt="Screenshot of Sarvada" src="https://github.com/user-attachments/assets/62c933f5-5bfe-43b4-92a4-af78b0d79788" />
+<img width="1674" height="1176" alt="Screenshot of The interface" src="https://github.com/user-attachments/assets/62c933f5-5bfe-43b4-92a4-af78b0d79788" />
 
 
 
 <h3>👓 Smart Glasses</h3>
 <p>This is a very lightweight, rusty proof of concept of a wearable headset that provides system info, time, notifications. This is yet to become a full blown prototype as I am currently figuring out a 'presentable' optical design than a display taped 25 cm from the eye. 😂</p>
-<img width="777" height="436" alt="Images of the current prototype...yes, those are breadboards straped onto my glasses with glitter tape😂" src="https://github.com/user-attachments/assets/9d429595-e590-4a73-be5b-744c1945a3c1" />
-
+<img width="1674" height="1176" alt="Screenshot of the device..." src="https://github.com/user-attachments/assets/b611970e-4adc-4a3f-a44f-f1fb4fb7f463" />
 
 
 <h3>📅 Planr</h3>
