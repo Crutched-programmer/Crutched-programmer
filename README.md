@@ -28,7 +28,8 @@
 
 <h3>👓 Smart Glasses</h3>
 <p>This is a very lightweight, rusty proof of concept of a wearable headset that provides system info, time, notifications. This is yet to become a full blown prototype as I am currently figuring out a 'presentable' optical design than a display taped 25 cm from the eye. 😂</p>
-<img width="1674" height="1176" alt="Screenshot of the device..." src="https://github.com/user-attachments/assets/b611970e-4adc-4a3f-a44f-f1fb4fb7f463" />
+<img width="1674" height="1176" alt="Screenshot of the device..." src="https://github.com/user-attachments/assets/4fece132-455d-4226-bf31-8f7b85288649" />
+
 
 
 <h3>📅 Planr</h3>
