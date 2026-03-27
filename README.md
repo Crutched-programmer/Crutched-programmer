@@ -1,5 +1,5 @@
 
-<h1>Greetings... I am Crutched_Programmer! </h1>
+<h1 align='center'>Greetings... I am Crutched_Programmer! </h1>
 <h2 style="color: #ffddaa;">I am a <span style="color:#ffcc99;">Grade 11 CBSE student</span> in <span style="color:#ffcc99;">Chennai</span> and I try to make cool projects related to <span style="color:#ffcc99;">music</span>, <span style="color:#ffcc99;">AI</span> and <span style="color:#ffcc99;">Arduino</span>.</h2>
 
 <p style="color: #ffcc99;">Stay tuned for my next project... an app</p>
@@ -110,8 +110,8 @@
 
 <p style="color: #ffcc99;">Always building. Always shipping. Open to collabs.</p>
 <p style="margin-top:10px; color: #ffcc99;">
-  📧 <a href="mailto:thyareoptimistic@gmail.com" style="color:#ffddaa;text-decoration:none">thyareoptimistic@gmail.com</a>
+  📧 <a href="mailto:thyareoptimistic@gmail.com" style="color:#ffddaa;text-decoration:none">E-mail</a>
   &nbsp;·&nbsp;
-  💬 Discord: <span style="color:#ffddaa">Crutched_programmer#9040</span>
+  💬 Discord: <span style="color:#ffddaa">Discord</span>
 </p>
-<h1 style="color: #ffddaa;">Have a look at my repositories (at least the active ones 😅)</h1>
+<h1 style="color: #ffddaa;">Have a look at my repositories! </h1>
