@@ -4,7 +4,7 @@
 
 <p style="color: #ffcc99;">Stay tuned for my next project... an app</p>
 
-##My Project Showcase
+My Project Showcase
 
 <table style="width:100%; border-collapse:collapse; margin:30px 0;">
   
