@@ -1,10 +1,8 @@
 
 <h1 align='center'>Greetings... I am Crutched_Programmer! </h1>
-<h2 style="color: #ffddaa;">I am a <span style="color:#ffcc99;">Grade 11 CBSE student</span> in <span style="color:#ffcc99;">Chennai</span> and I try to make cool projects related to <span style="color:#ffcc99;">music</span>, <span style="color:#ffcc99;">AI</span> and <span style="color:#ffcc99;">Arduino</span>.</h2>
+<h2>I am a grade 11 CBSE student in Chennai, India. I work on projects related to AI, music, Arduino and self-hosting</h2>
 
-<p style="color: #ffcc99;">Stay tuned for my next project... an app</p>
-
-My Project Showcase
+<h2>My Project Showcase</h2>
 
 <table style="width:100%; border-collapse:collapse; margin:30px 0;">
   
