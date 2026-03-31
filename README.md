@@ -18,7 +18,19 @@
     </td>
   </tr>
 
-  <!-- 2 Sarvada -->
+   <!-- 2 Makro -->
+  <tr style="background-color:#873400;">
+    <td style="padding:20px; width:45%; vertical-align:top;">
+      <div><img src='https://github.com/user-attachments/assets/3eb79c1f-5aae-46cd-b463-4f70060d0a5a'/></div>
+    </td>
+    <td style="padding:20px; vertical-align:top; color:#ffddaa;">
+      <h3 style="margin:0 0 12px 0; color:#ffcc99;">Makro</h3>
+      <p style="margin:0 0 12px 0; line-height:1.6;">This is a simple drag and drop interface for creating neat code for a macropad. Simply drag and drop component into the grid, select the MCU, enter the keybinds of the components. The application will generate the code for the macropad instantly.</p>
+      <a href="https://github.com/Crutched-programmer/Makro" style="color:#ffcc99; font-weight:600;">→Try it out</a>
+    </td>
+  </tr>
+  
+  <!-- 3 Sarvada -->
   <tr style="background-color:#ffd4aa;">
     <td style="padding:20px; width:45%; vertical-align:top;">
       <a href="https://github.com/Crutched-programmer/Sarvada"><img src="https://github.com/user-attachments/assets/6649dfde-97e4-47cd-88c4-23be5ddc384f" width="420" height="280" style="border-radius:12px; object-fit:cover;" alt="Sarvada"></a>
@@ -30,7 +42,7 @@
     </td>
   </tr>
 
-  <!-- 3 WebTV -->
+  <!-- 4 WebTV -->
   <tr style="background-color:#f9c18a;">
     <td style="padding:20px; width:45%; vertical-align:top;">
       <a href="https://github.com/Crutched-programmer/WebTV"><img src="https://github.com/user-attachments/assets/62c933f5-5bfe-43b4-92a4-af78b0d79788" width="420" height="280" style="border-radius:12px; object-fit:cover;" alt="WebTV"></a>
@@ -42,7 +54,7 @@
     </td>
   </tr>
 
-  <!-- 4 Smart Glasses -->
+  <!-- 5 Smart Glasses -->
   <tr style="background-color:#f0a96b;">
     <td style="padding:20px; width:45%; vertical-align:top;">
       <a href="https://github.com/Crutched-programmer"><img src="https://github.com/user-attachments/assets/4fece132-455d-4226-bf31-8f7b85288649" width="420" height="280" style="border-radius:12px; object-fit:cover;" alt="Smart Glasses"></a>
@@ -54,7 +66,7 @@
     </td>
   </tr>
 
-  <!-- 5 Planr -->
+  <!-- 6 Planr -->
   <tr style="background-color:#e6904c;">
     <td style="padding:20px; width:45%; vertical-align:top;">
       <a href="https://github.com/Crutched-programmer/Planr"><img src="https://github.com/user-attachments/assets/c207acce-1a4c-4f3c-a33c-8fc2fd8935d6" width="420" height="280" style="border-radius:12px; object-fit:cover;" alt="Planr"></a>
@@ -66,7 +78,7 @@
     </td>
   </tr>
 
-  <!-- 6 Autonomous Cleaning Robot -->
+  <!-- 7 Autonomous Cleaning Robot -->
   <tr style="background-color:#d97f3a;">
     <td style="padding:20px; width:45%; vertical-align:top;">
       <a href="https://github.com/Crutched-programmer"><img src="https://github.com/user-attachments/assets/841f7c18-5d45-42dc-88d5-0ff59a3906f0" width="420" height="280" style="border-radius:12px; object-fit:cover;" alt="Cleaning Robot"></a>
@@ -78,7 +90,7 @@
     </td>
   </tr>
 
-  <!-- 7 Seekwave -->
+  <!-- 8 Seekwave -->
   <tr style="background-color:#c96d28;">
     <td style="padding:20px; width:45%; vertical-align:top;">
       <a href="https://github.com/Crutched-programmer/Seekwave"><img src="https://github.com/user-attachments/assets/3f230682-e232-42ae-a359-aef70bf9de93" width="420" height="280" style="border-radius:12px; object-fit:cover;" alt="Seekwave"></a>
@@ -90,17 +102,7 @@
     </td>
   </tr>
 
-  <!-- 8 Modular MIDI Device - darkest #873400 -->
-  <tr style="background-color:#873400;">
-    <td style="padding:20px; width:45%; vertical-align:top;">
-      <div style="width:420px; height:280px; background:#5c2f0f; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#ffddaa; font-style:italic; border:2px solid #964a1a; text-align:center; padding:20px;">Modular MIDI Device<br>(Hardware Prototype — Images Coming Soon)</div>
-    </td>
-    <td style="padding:20px; vertical-align:top; color:#ffddaa;">
-      <h3 style="margin:0 0 12px 0; color:#ffcc99;">Modular MIDI Device</h3>
-      <p style="margin:0 0 12px 0; line-height:1.6;">This is an experimental project currently on hold as of March 2026. The project aims at using multiple io expander modules that communicate with a microcontroller (Atmega 32U4) over i2c to allow me to create a modular USB input device for both macros and MIDI. I must wait till I can burn 100$ worth of components to experiment with before finalizing on the final prototype...</p>
-      <a href="https://github.com/Crutched-programmer" style="color:#ffcc99; font-weight:600;">→ Read Project Notes</a>
-    </td>
-  </tr>
+
 
 </table>
 
