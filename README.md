@@ -2,6 +2,7 @@
 <h1 align='center'>Greetings... I am Crutched_Programmer! </h1>
 <h2>I am a grade 11 CBSE student in Chennai, India. I work on projects related to AI, music, Arduino and self-hosting</h2>
 
+
 <h2>My Project Showcase</h2>
 
 <table style="width:100%; border-collapse:collapse; margin:30px 0;">
