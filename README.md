@@ -62,7 +62,7 @@
     </td>
     <td style="padding:20px; vertical-align:top; color:#3f2a1f;">
       <h3 style="margin:0 0 12px 0; color:#873400;">Smart Glasses</h3>
-      <p style="margin:0 0 12px 0; line-height:1.6;">This is a very lightweight, rusty proof of concept of a wearable headset that provides system info, time, notifications. This is yet to become a full blown prototype as I am currently figuring out a 'presentable' optical design than a display taped 25 cm from the eye. 😂</p>
+      <p style="margin:0 0 12px 0; line-height:1.6;">This is a very lightweight, rusty proof of concept of a wearable headset that provides system info, time, notifications. This is yet to become a full blown prototype as I am currently working on sourcing the materials to make the optical design.</p>
       <a href="https://github.com/Crutched-programmer" style="color:#873400; font-weight:600;">→ See the Prototype</a>
     </td>
   </tr>
@@ -98,7 +98,7 @@
     </td>
     <td style="padding:20px; vertical-align:top; color:#3f2a1f;">
       <h3 style="margin:0 0 12px 0; color:#873400;">Seekwave — Real time audio waveform generator</h3>
-      <p style="margin:0 0 12px 0; line-height:1.6;">This is an Arduino based real time waveform generator that takes in audio input from an audio jack and displays a real time waveform of that audio (mono) on an I2c OLED. There are two waves on the image but both are of the same audio. This is my very first project that actually worked first try without compilation errors!😂</p>
+      <p style="margin:0 0 12px 0; line-height:1.6;">This is an Arduino based real time waveform generator that takes in audio input from an audio jack and displays a real time waveform of that audio (mono) on an I2c OLED. There are two waves on the image but both are of the same audio. </p>
       <a href="https://github.com/Crutched-programmer/Seekwave" style="color:#873400; font-weight:600;">→ See the Waveform</a>
     </td>
   </tr>
