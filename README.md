@@ -68,6 +68,7 @@
 </table>
 
 ---
+<h3 align='center'>====Check out my other projects 👇====</h3>
 
 <details>
 <summary><b>Smart Glasses</b></summary>
