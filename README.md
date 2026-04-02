@@ -122,4 +122,4 @@
 
 Always building. Always shipping. Open to collabs.
 
-📧 [E-mail](mailto:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a5d1cddcc4d7c0cad5d1ccc8ccd6d1ccc6e5c2c
+📧 [E-mail](mailto:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a5d1cddcc4d7c0cad5d1ccc8ccd6d1ccc6e5c2c)
