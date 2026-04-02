@@ -1,9 +1,9 @@
 
-<h1 align='center'>Greetings... I am Crutched_Programmer! </h1>
+<h1 align='center'>Greetings... I am Crutched_Programmer!</h1>
 <h2>I am a grade 11 CBSE student in Chennai, India. I work on projects related to AI, music, Arduino and self-hosting</h2>
 
 
-<h2>My Project Showcase</h2>
+<h2 align='center'>====Check out my projects👇====</h2>
 
 <table style="width:100%; border-collapse:collapse; margin:30px 0;">
   
@@ -13,7 +13,7 @@
       <a href="https://github.com/Crutched-programmer/Sashell"><img src="https://github.com/user-attachments/assets/ec5cbb1b-6dac-40c1-9cf5-6ff3397445d5" width="420" height="280" style="border-radius:12px; object-fit:cover;" alt="Sashell"></a>
     </td>
     <td style="padding:20px; vertical-align:top; color:#3f2a1f;">
-      <h3 style="margin:0 0 12px 0; color:#873400;"> Sashell — AI-Powered Linux Shell</h3>
+      <h3 style="margin:0 0 12px 0; color:#873400;"> Sashell — The AI-Powered Linux Shell</h3>
       <p style="margin:0 0 12px 0; line-height:1.6;">I used the Sarvam API to power a shell that can translate English commands into Linux commands (check the repo's README.md for demo video) that can be run. It can also scan for any mistakes in the commands (from spelling errors to dangerous commands). It also has a chat interface that has a retro CLI look to it. It supports the same TTS capabilities as the Web UI project with support for many voices and Indian languages and a fallback voice using pyttsx3.</p>
       <a href="https://github.com/Crutched-programmer/Sashell" style="color:#873400; font-weight:600;">→ View Repo & Demo Video</a>
     </td>
@@ -26,7 +26,7 @@
     </td>
     <td style="padding:20px; vertical-align:top; color:#ffddaa;">
       <h3 style="margin:0 0 12px 0; color:#ffcc99;">Makro</h3>
-      <p style="margin:0 0 12px 0; line-height:1.6;">This is a simple drag and drop interface for creating neat code for a macropad. Simply drag and drop component into the grid, select the MCU, enter the keybinds of the components. The application will generate the code for the macropad instantly.</p>
+      <p style="margin:0 0 12px 0; line-height:1.6;">This is a simple drag and drop interface for creating neat code for a macropad. Simply drag and drop any of the wide collection of components into the grid, select the Microcontroller, enter the keybinds of the components. The application will generate the code for the macropad instantly.</p>
       <a href="https://github.com/Crutched-programmer/Makro" style="color:#ffcc99; font-weight:600;">→Try it out</a>
     </td>
   </tr>
