@@ -1,5 +1,5 @@
 <h1 align='center'>Greetings... I am Crutched_Programmer!</h1>
-<h2>I am a grade 11 CBSE student in Chennai, India. I work on projects related to AI, music, Arduino and self-hosting</h2>
+<h3 align='center'>I am a grade 11 CBSE student in Chennai, India. I work on projects related to AI, music, Arduino and self-hosting</h3>
 
 <h2 align='center'>====Check out my projects👇====</h2>
 
