@@ -1,8 +1,9 @@
 <h1 align='center'>Greetings..I'm Crutched_programmer#9040</h1>                                                          
                                                                                                                   
-<h3 align='center'>I am a grade 11 CBSE student in Chennai, India. I work on projects related to AI, music, Arduino and self-hosting</h3>
+<h3 align='center'>I am a grade 11 CBSE student in Chennai, India.<br> 
+AI•Music•Arduino•self-hosting</h3>
 
-<h2 align='center'>====Check out my projects👇====</h2>
+<h2 align='center'>••••Check out my projects👇••••</h2>
 
 <table width="100%">
 
@@ -69,7 +70,7 @@
 </table>
 
 ---
-<h3 align='center'>====Check out my other projects 👇====</h3>
+<h3 align='center'>••••Check out my other projects 👇••••</h3>
 
 <details>
 <summary><b>Smart Glasses</b></summary>
