@@ -11,7 +11,7 @@ AI•Music•Arduino•self-hosting</h3>
 
   <!-- 1 Sashell -->
   <tr>
-    <td width="100%" valign="center" align="center">
+    <td width="55%" valign="center" align="center">
       <a href="https://github.com/Crutched-programmer/Sashell"><img src="https://github.com/user-attachments/assets/ec5cbb1b-6dac-40c1-9cf5-6ff3397445d5" width="420" height="280" alt="Sashell"></a>
     </td>
     <td valign="top">
@@ -23,7 +23,7 @@ AI•Music•Arduino•self-hosting</h3>
 
   <!-- 2 Makro -->
   <tr>
-    <td width="100%" valign="center" align="center">
+    <td width="55%" valign="center" align="center">
       <img src="https://github.com/user-attachments/assets/3eb79c1f-5aae-46cd-b463-4f70060d0a5a" width="420" alt="Makro">
     </td>
     <td valign="top">
@@ -35,7 +35,7 @@ AI•Music•Arduino•self-hosting</h3>
 
   <!-- 3 Sarvada -->
   <tr>
-    <td width="100%" valign="center" align="center">
+    <td width="55%" valign="center" align="center">
       <a href="https://github.com/Crutched-programmer/Sarvada"><img src="https://github.com/user-attachments/assets/6649dfde-97e4-47cd-88c4-23be5ddc384f" width="420" height="280" alt="Sarvada"></a>
     </td>
     <td valign="top">
@@ -47,7 +47,7 @@ AI•Music•Arduino•self-hosting</h3>
 
   <!-- 4 WebTV -->
   <tr>
-    <td width="100%" valign="center" align="center">
+    <td width="55%" valign="center" align="center">
       <a href="https://github.com/Crutched-programmer/WebTV"><img src="https://github.com/user-attachments/assets/62c933f5-5bfe-43b4-92a4-af78b0d79788" width="420" height="280" alt="WebTV"></a>
     </td>
     <td valign="top">
@@ -59,7 +59,7 @@ AI•Music•Arduino•self-hosting</h3>
 
   <!-- 5 Seekwave -->
   <tr>
-    <td width="100%" valign="center" align="center">
+    <td width="55%" valign="center" align="center">
       <a href="https://github.com/Crutched-programmer/Seekwave"><img src="https://github.com/user-attachments/assets/3f230682-e232-42ae-a359-aef70bf9de93" width="420" height="280" alt="Seekwave"></a>
     </td>
     <td valign="top">
@@ -79,7 +79,7 @@ AI•Music•Arduino•self-hosting</h3>
 <br>
 <table width="100%">
   <tr>
-    <td width="100%" valign="center" align="center">
+    <td width="55%" valign="center" align="center">
       <a href="https://github.com/Crutched-programmer"><img src="https://github.com/user-attachments/assets/4fece132-455d-4226-bf31-8f7b85288649" width="420" height="280" alt="Smart Glasses"></a>
     </td>
     <td valign="top">
@@ -95,7 +95,7 @@ AI•Music•Arduino•self-hosting</h3>
 <br>
 <table width="100%">
   <tr>
-    <td width="100%" valign="center" align="center">
+    <td width="55%" valign="center" align="center">
       <a href="https://github.com/Crutched-programmer/Planr"><img src="https://github.com/user-attachments/assets/c207acce-1a4c-4f3c-a33c-8fc2fd8935d6" width="420" height="280" alt="Planr"></a>
     </td>
     <td valign="top">
@@ -111,7 +111,7 @@ AI•Music•Arduino•self-hosting</h3>
 <br>
 <table width="100%">
   <tr>
-    <td width="100%" valign="center" align="center">
+    <td width="55%" valign="center" align="center">
       <a href="https://github.com/Crutched-programmer"><img src="https://github.com/user-attachments/assets/841f7c18-5d45-42dc-88d5-0ff59a3906f0" width="420" height="280" alt="Cleaning Robot"></a>
     </td>
     <td valign="top">
