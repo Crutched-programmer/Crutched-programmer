@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crutched_programmer — Builder of Things</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --pink: #DF79B9;
+      --violet: #A27FCF;
+      --blue: #4C84CE;
+      --sky: #0082B4;
+      --teal: #00798A;
+      --forest: #006D5C;
+      --bg: #f5f4f0;
+      --surface: #ffffff;
+      --surface2: #f0eeea;
+      --border: rgba(0, 0, 0, 0.09);
+      --border2: rgba(0, 0, 0, 0.16);
+      --text: #000000;
+      --muted: #666677;
+      --mono: 'Space Mono', monospace;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2.5rem;
+      background: rgba(245, 244, 240, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: var(--mono);
+      font-size: 0.9rem;
+      color: var(--pink);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    /* HERO */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(160deg, #fce8f3 0%, #ede8f7 40%, #e8eef9 80%, #f5f4f0 100%);
+      padding: 6rem 2rem 4rem;
+    }
+
+    #donut-canvas {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      line-height: 1.15;
+      color: rgba(255, 0, 162, 0.32);
+      white-space: pre;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    #donut-canvas2 {
+      position: absolute;
+      top: 28%;
+      right: 4%;
+      font-family: var(--mono);
+      font-size: 0.5rem;
+      line-height: 1.15;
+      color: rgba(111, 0, 255, 0.161);
+      white-space: pre;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 780px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--pink);
+      border: 1px solid rgba(223, 121, 185, 0.4);
+      padding: 0.3rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-name {
+      font-family: var(--mono);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--pink) 0%, var(--violet) 50%, var(--blue) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+
+    .hero-tagline {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+      font-weight: 300;
+    }
+
+    .hero-tagline span {
+      color: var(--violet);
+      font-weight: 500;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    .btn-primary {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      padding: 0.75rem 1.75rem;
+      background: var(--pink);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 700;
+      transition: opacity .2s, transform .15s;
+    }
+
+    .btn-primary:hover {
+      opacity: .85;
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      padding: 0.75rem 1.75rem;
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border2);
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: border-color .2s, transform .15s;
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(0, 0, 0, .3);
+      transform: translateY(-1px);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-n {
+      font-family: var(--mono);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--pink);
+      display: block;
+      line-height: 1;
+    }
+
+    .stat-l {
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-family: var(--mono);
+    }
+
+    .scroll-cue {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0)
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(6px)
+      }
+    }
+
+    /* BONGO */
+    #bongo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bongo-inner {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      max-width: 460px;
+    }
+
+    .bongo-img {
+      width: 108px;
+      border-radius: 10px;
+    }
+
+    .bongo-text {
+      font-family: var(--mono);
+      font-size: 0.76rem;
+      color: var(--muted);
+      line-height: 2;
+    }
+
+    .bongo-text em {
+      color: var(--pink);
+      font-style: normal;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 5rem 2rem;
+    }
+
+    .section-label {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-family: var(--mono);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .section-sub {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin-bottom: 3rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    #about {
+      background: var(--surface);
+      border-top: 2px solid var(--violet);
+      --accent: var(--violet);
+    }
+
+    #projects {
+      background: var(--bg);
+      border-top: 2px solid var(--blue);
+      --accent: var(--blue);
+    }
+
+    #skills {
+      background: var(--surface);
+      border-top: 2px solid var(--sky);
+      --accent: var(--sky);
+    }
+
+    #contact {
+      background: var(--bg);
+      border-top: 2px solid var(--teal);
+      --accent: var(--teal);
+    }
+
+    #hero .section-title,
+    .section-title {
+      color: var(--accent, var(--text));
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-text p strong {
+      color: var(--violet);
+      font-weight: 600;
+    }
+
+    .about-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .chip {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 100px;
+      border: 1px solid;
+      letter-spacing: 0.06em;
+    }
+
+    .chip-pink {
+      border-color: rgba(223, 121, 185, .45);
+      color: #b84d90;
+    }
+
+    .chip-violet {
+      border-color: rgba(162, 127, 207, .45);
+      color: #7a52b0;
+    }
+
+    .chip-blue {
+      border-color: rgba(76, 132, 206, .45);
+      color: #2a5ea8;
+    }
+
+    .chip-sky {
+      border-color: rgba(0, 130, 180, .45);
+      color: #005a8a;
+    }
+
+    .chip-teal {
+      border-color: rgba(0, 121, 138, .45);
+      color: #005060;
+    }
+
+    .chip-forest {
+      border-color: rgba(0, 109, 92, .45);
+      color: var(--forest);
+    }
+
+    .setup-list {
+      list-style: none;
+    }
+
+    .setup-list li {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--muted);
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 0.75rem;
+      align-items: baseline;
+    }
+
+    .setup-list li:last-child {
+      border-bottom: none;
+    }
+
+    .setup-key {
+      color: var(--pink);
+      min-width: 80px;
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* PROJECTS GRID — 2 cols */
+    #projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .pcard-mega {
+      grid-column: 1/-1;
+    }
+
+    .pcard {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: border-color .2s, box-shadow .2s, transform .18s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pcard:hover {
+      border-color: var(--border2);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, .06);
+      transform: translateY(-2px);
+    }
+
+    .pcard-header {
+      padding: 1.25rem 1.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .pcard-tag {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+    }
+
+    .pcard-links {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .pcard-link {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.2rem 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      transition: color .2s, border-color .2s;
+    }
+
+    .pcard-link:hover {
+      color: var(--text);
+      border-color: var(--border2);
+    }
+
+    .pcard-body {
+      padding: 1rem 1.25rem 1.25rem;
+      flex: 1;
+    }
+
+    .pcard-title {
+      font-family: var(--mono);
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .pcard-desc {
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .pcard-expand {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color .2s;
+    }
+
+    .pcard-expand:hover {
+      color: var(--text);
+    }
+
+    /* README panel */
+    .pcard-readme {
+      display: none;
+      padding: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-family: var(--mono);
+      font-size: 0.74rem;
+      color: var(--muted);
+      line-height: 1.75;
+      background: var(--surface2);
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .pcard-readme.open {
+      display: block;
+    }
+
+    .pcard-readme h2,
+    .pcard-readme h3 {
+      font-family: var(--mono);
+      color: var(--text);
+      font-size: 0.78rem;
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .pcard-readme p {
+      margin-bottom: 0.75rem;
+    }
+
+    .pcard-readme ul {
+      padding-left: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .pcard-readme li {
+      margin-bottom: 0.25rem;
+    }
+
+    .pcard-readme code {
+      background: rgba(0, 0, 0, .06);
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      font-size: 0.72rem;
+    }
+
+    .readme-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--sky);
+      text-decoration: none;
+      border: 1px solid rgba(0, 130, 180, .3);
+      border-radius: 4px;
+      padding: 0.22rem 0.6rem;
+      margin: 0 0.25rem 0.5rem 0;
+      transition: background .15s;
+    }
+
+    .readme-link:hover {
+      background: rgba(0, 130, 180, .06);
+      border-color: rgba(0, 130, 180, .5);
+    }
+
+    /* HOST-IT expanded grid */
+    .host-it-panel {
+      display: none;
+      padding: 1.25rem;
+      border-top: 1px solid var(--border);
+      background: var(--surface2);
+    }
+
+    .host-it-panel.open {
+      display: block;
+    }
+
+    .hit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+
+    .hit-tile {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+
+    .hit-tag {
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      border-radius: 100px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    .hit-name {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+
+    .hit-desc {
+      font-size: 0.74rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    /* tag colours */
+    .tag-ai {
+      background: rgba(223, 121, 185, .1);
+      color: #b84d90;
+    }
+
+    .tag-iot {
+      background: rgba(0, 130, 180, .1);
+      color: #005a8a;
+    }
+
+    .tag-web {
+      background: rgba(76, 132, 206, .1);
+      color: #2a5ea8;
+    }
+
+    .tag-cli {
+      background: rgba(162, 127, 207, .1);
+      color: #7a52b0;
+    }
+
+    .tag-sys {
+      background: rgba(0, 121, 138, .1);
+      color: #005060;
+    }
+
+    .tag-tool {
+      background: rgba(0, 109, 92, .1);
+      color: var(--forest);
+    }
+
+    .tag-eco {
+      background: rgba(0, 109, 92, .1);
+      color: var(--forest);
+    }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      background: var(--bg);
+    }
+
+    .skill-icon {
+      width: 28px;
+      height: 28px;
+      margin-bottom: 0.75rem;
+      display: block;
+      object-fit: contain;
+    }
+
+    .skill-card-name {
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+
+    .skill-card-items {
+      font-size: 0.74rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .skill-bar-wrap {
+      height: 3px;
+      background: rgba(0, 0, 0, .08);
+      border-radius: 100px;
+      margin-top: 0.75rem;
+      overflow: hidden;
+    }
+
+    .skill-bar {
+      height: 100%;
+      border-radius: 100px;
+      width: 0;
+      transition: width 1.2s cubic-bezier(.2, 1, .3, 1);
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .contact-links a {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      transition: border-color .2s, color .2s;
+    }
+
+    .contact-links a:hover {
+      border-color: var(--border2);
+      color: var(--text);
+    }
+
+    .contact-lbl {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-val {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--text);
+    }
+
+    .terminal-block {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 2;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+    }
+
+    @keyframes blink {
+
+      0%,
+      49% {
+        opacity: 1
+      }
+
+      50%,
+      100% {
+        opacity: 0
+      }
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      background: var(--surface);
+    }
+
+    /* REVEAL */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width:720px) {
+      nav {
+        padding: 1rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      #donut-canvas2 {
+        display: none;
+      }
+
+      #projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hit-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, .1);
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a class="nav-logo" href="#hero">~/Crutched_programmer</a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <pre id="donut-canvas" aria-hidden="true"></pre>
+    <pre id="donut-canvas2" aria-hidden="true"></pre>
+    <div class="hero-inner">
+      <div class="hero-badge">Grade 11 · Chennai, India · Open to collabs</div>
+      <h1 class="hero-name">Crutched_<br>programmer</h1>
+      <p class="hero-tagline">I build <span>self-hosted tools</span>, embedded hardware, and AI-integrated apps — mostly
+        because I can, sometimes because I should.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="https://github.com/Crutched-programmer" target="_blank" class="btn-ghost">GitHub ↗</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">20+</span><span class="stat-l">Projects Built</span></div>
+        <div class="stat"><span class="stat-n">5+</span><span class="stat-l">Self-Hosted Services</span></div>
+        <div class="stat"><span class="stat-n">∞</span><span class="stat-l">Ideas in Queue</span></div>
+      </div>
+    </div>
+    <div class="scroll-cue">scroll ↓</div>
+  </section>
+
+  <!-- BONGO CAT -->
+  <div id="bongo">
+    <img height="100%" width="100%"
+      src="https://github.com/user-attachments/assets/4ef7335d-d6e2-4cc6-9908-529814bafac6" />
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label">01 / about</p>
+      <h2 class="section-title">Who's building?</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a <strong>Grade 11 CBSE student</strong> from Chennai, India who spends an unhealthy amount of time
+            turning wild ideas into real, working software and hardware.</p>
+          <p>My philosophy: if it can be self-hosted, it will be. I build AI chat agents, terminal shells, Arduino
+            macropads, loop pedals, network monitors, and things that probably shouldn't exist — but do.</p>
+          <p>I think in systems — inputs, outputs, constraints — and I ship fast. Every project starts as a README and
+            ends as something you can actually run. Workflow lives in <strong>CONJURE</strong> magic and a
+            <code>push.sh</code> script.
+          </p>
+          <div class="about-chips">
+            <span class="chip chip-pink">Python</span>
+            <span class="chip chip-violet">Arduino / C++</span>
+            <span class="chip chip-blue">Web Dev</span>
+            <span class="chip chip-sky">AI Integration</span>
+            <span class="chip chip-teal">Streamlit</span>
+            <span class="chip chip-forest">Flask</span>
+            <span class="chip chip-pink">Android</span>
+            <span class="chip chip-violet">Embedded HW</span>
+            <span class="chip chip-blue">Linux</span>
+            <span class="chip chip-sky">Self-Hosting</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <ul class="setup-list">
+            <li><span class="setup-key">github</span> Crutched-programmer</li>
+            <li><span class="setup-key">discord</span> Crutched_programmer#9040</li>
+            <li><span class="setup-key">email</span> thyareoptimistic@gmail.com</li>
+            <li><span class="setup-key">school</span> Grade 11, CBSE · Chennai</li>
+            <li><span class="setup-key">hobby</span> Music tools, hardware hacks, AI</li>
+            <li><span class="setup-key">workflow</span> CONJURE → push.sh → ship it</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label">02 / projects</p>
+      <h2 class="section-title">Things I've built</h2>
+      <p class="section-sub">All self-hosted, most pushed at 2am, every one born from a specific itch to scratch.</p>
+
+      <div id="projects-grid">
+
+        <!-- HOST-IT MEGA TILE (full width) -->
+        <div class="pcard pcard-mega reveal">
+          <div class="pcard-header">
+            <span class="pcard-tag tag-eco">Ecosystem · 18 tools</span>
+            <div class="pcard-links">
+              <a class="pcard-link" href="https://crutched-programmer.github.io/Host-it/" target="_blank">site ↗</a>
+              <a class="pcard-link" href="https://github.com/Crutched-programmer" target="_blank">repo ↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <h3 class="pcard-title" style="color:var(--teal); font-size:1.3rem;">Host-it</h3>
+            <p class="pcard-desc" style="max-width:820px; font-size:0.9rem; line-height:1.7;">
+              A local-first automation ecosystem — 18 modular tools built to run on recycled hardware
+              with zero cloud dependencies. Every project does one job and does it well: no bloat,
+              no external APIs, no subscriptions. Python stdlib is the primary dependency; most tools
+              need nothing else to run. The entire stack runs simultaneously on a low-spec Linux machine.<br><br>
+              Built on four principles: make automation accessible on your own hardware, eliminate
+              cloud lock-in for personal tooling, keep every tool readable and modifiable, and give
+              every idea a push-ready home on GitHub the day it's born.
+            </p>
+            <button class="pcard-expand" onclick="toggleHostIt(this)">
+              <span class="arrow">▶</span>&nbsp;explore all 12 tools
+            </button>
+          </div>
+          <div class="host-it-panel" id="hostit-panel">
+            <div style="margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid var(--border);">
+              <a class="readme-link" href="https://crutched-programmer.github.io/Host-it/" target="_blank">🌐 host-it
+                site ↗</a>
+              <a class="readme-link" href="https://github.com/Crutched-programmer" target="_blank">GitHub ↗</a>
+            </div>
+            <div class="hit-grid">
+              <div class="hit-tile">
+                <span class="hit-tag tag-tool">Files</span>
+                <div class="hit-name" style="color:var(--forest);">FileVault</div>
+                <div class="hit-desc">Self-hosted file vault — Flask + SQLite. Upload, tag, retrieve files over LAN. No
+                  cloud, no subscriptions.</div>
+              </div>
+              <div class="hit-tile">
+                <span class="hit-tag tag-web">Web</span>
+                <div class="hit-name" style="color:var(--blue);">linkdrop</div>
+                <div class="hit-desc">Local network URL clipboard. Drop a link on one device, open it on another — zero
+                  copy-paste friction.</div>
+              </div>
+              <div class="hit-tile">
+                <span class="hit-tag tag-web">Web</span>
+                <div class="hit-name" style="color:var(--blue);">tempdrop</div>
+                <div class="hit-desc">Self-destructing file share with QR code generation. Files vanish after one
+                  download or a timeout.</div>
+              </div>
+              <div class="hit-tile">
+                <span class="hit-tag tag-web">Web</span>
+                <div class="hit-name" style="color:var(--blue);">quicknote</div>
+                <div class="hit-desc">One persistent textarea over LAN. One note, always there, always in sync. Stupid
+                  simple by design.</div>
+              </div>
+              <div class="hit-tile">
+                <span class="hit-tag tag-sys">Network</span>
+                <div class="hit-name" style="color:var(--teal);">NetWatch</div>
+                <div class="hit-desc">Local network monitor. ARP scan, continuous ping, device history, live web
+                  dashboard.</div>
+              </div>
+              <div class="hit-tile">
+                <span class="hit-tag tag-sys">System</span>
+                <div class="hit-name" style="color:var(--teal);">SysWatch</div>
+                <div class="hit-desc">System metrics daemon. CPU, RAM, disk, temp — logged continuously and served as a
+                  live dashboard.</div>
+              </div>
+              <div class="hit-tile">
+                <span class="hit-tag tag-tool">Sync</span>
+                <div class="hit-name" style="color:var(--forest);">SyncDrop</div>
+                <div class="hit-desc">Bidirectional file sync via inotify + rsync. Watch folders, sync on change. Your
+                  own Dropbox, minus Dropbox.</div>
+              </div>
+              <div class="hit-tile">
+                <span class="hit-tag tag-sys">System</span>
+                <div class="hit-name" style="color:var(--teal);">driftlog</div>
+                <div class="hit-desc">Passive activity logger. Records active windows, builds a timeline of your day
+                  automatically.</div>
+              </div>
+              <div class="hit-tile">
+                <span class="hit-tag tag-sys">System</span>
+                <div class="hit-name" style="color:var(--teal);">clipstack</div>
+                <div class="hit-desc">Clipboard history manager. Every copy saved, searchable, recoverable. Never lose a
+                  paste again.</div>
+              </div>
+              <div class="hit-tile">
+                <span class="hit-tag tag-sys">Audio</span>
+                <div class="hit-name" style="color:var(--sky);">AudioDucker</div>
+                <div class="hit-desc">Speech-triggered ducking daemon. TFLite detects voice, PulseAudio fades background
+                  audio automatically.</div>
+              </div>
+              <div class="hit-tile">
+                <span class="hit-tag tag-sys">Power</span>
+                <div class="hit-name" style="color:var(--sky);">gridwatch</div>
+                <div class="hit-desc">Home power monitor. Tracks voltage, current, consumption — SQLite logging + web
+                  dashboard.</div>
+              </div>
+              <div class="hit-tile">
+                <span class="hit-tag tag-web">Photos</span>
+                <div class="hit-name" style="color:var(--blue);">snapstack</div>
+                <div class="hit-desc">Self-hosted photo backup. Auto-uploads over LAN, organises by date, serves a
+                  browsable gallery.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SARVADA -->
+        <div class="pcard reveal">
+          <div class="pcard-header">
+            <span class="pcard-tag tag-ai">AI</span>
+            <div class="pcard-links">
+              <a class="pcard-link" href="https://github.com/Crutched-programmer/Sarvada" target="_blank">repo ↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <h3 class="pcard-title" style="color:var(--pink);">Sarvada</h3>
+            <p class="pcard-desc">Full-featured Streamlit chat agent on Sarvam AI. Multi-session, TTS/STT, translation,
+              memory summarization, 27 slash commands, VS Code-style sidebar.</p>
+            <button class="pcard-expand" onclick="toggleReadme(this)"><span class="arrow">▶</span> README</button>
+          </div>
+          <div class="pcard-readme">
+            <h2>Sarvada — Sarvam AI Chat Agent</h2>
+            <p>Streamlit-based conversational AI. Self-hosted, no cloud lock-in.</p>
+            <h3>Features</h3>
+            <ul>
+              <li>Multi-session persistent chat + memory summarization</li>
+              <li>TTS: Sarvam <code>bulbul:v3</code>, speaker <code>shubh</code></li>
+              <li>STT microphone input</li>
+              <li>Indian language translation via Sarvam API</li>
+              <li>27 slash commands · prompt templates · favourites</li>
+              <li>File upload + context injection</li>
+              <li>VS Code-style nav rail (240px / 72px collapsed)</li>
+              <li><code>&lt;think&gt;</code> blocks stripped before TTS</li>
+            </ul>
+            <h3>Stack</h3>
+            <p>Python · Streamlit · Sarvam AI API · Port 8501</p>
+            <p><code>streamlit run app.py</code></p>
+          </div>
+        </div>
+
+        <!-- SASHELL -->
+        <div class="pcard reveal">
+          <div class="pcard-header">
+            <span class="pcard-tag tag-cli">CLI</span>
+            <div class="pcard-links">
+              <a class="pcard-link" href="https://github.com/Crutched-programmer/Sashell" target="_blank">repo ↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <h3 class="pcard-title" style="color:var(--violet);">Sashell</h3>
+            <p class="pcard-desc">Python terminal shell with AI safety features, Sarvam TTS, theming engine, plugin
+              system (weather, ipinfo), sysinfo panel, Windows EXE packaging.</p>
+            <button class="pcard-expand" onclick="toggleReadme(this)"><span class="arrow">▶</span> README</button>
+          </div>
+          <div class="pcard-readme">
+            <h2>Sashell — AI Terminal Shell</h2>
+            <h3>Features</h3>
+            <ul>
+              <li>AI safety layer — flags dangerous commands before exec</li>
+              <li>Sarvam TTS for spoken shell feedback</li>
+              <li>Full theming engine with color schemes</li>
+              <li>Plugin system: weather (wttr.in), ipinfo, extensible</li>
+              <li>Sysinfo panel — RAM, CPU, disk</li>
+              <li>Standalone Windows EXE via PyInstaller</li>
+            </ul>
+            <h3>Stack</h3>
+            <p>Python · PyInstaller · Sarvam TTS API</p>
+          </div>
+        </div>
+
+        <!-- MAKRO -->
+        <div class="pcard reveal">
+          <div class="pcard-header">
+            <span class="pcard-tag tag-iot">IoT / HW</span>
+            <div class="pcard-links">
+              <a class="pcard-link" href="https://crutched-programmer.github.io/Makro/" target="_blank">live ↗</a>
+              <a class="pcard-link" href="https://github.com/Crutched-programmer/MAKRO" target="_blank">repo ↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <h3 class="pcard-title" style="color:var(--sky);">MAKRO</h3>
+            <p class="pcard-desc">Metro UI macropad firmware builder for Arduino Leonardo. Define macros in a web UI,
+              generate HID firmware, flash to hardware. Multi-MCU, multi-firmware-target.</p>
+            <button class="pcard-expand" onclick="toggleReadme(this)"><span class="arrow">▶</span> README</button>
+          </div>
+          <div class="pcard-readme">
+            <div style="margin-bottom:0.75rem;">
+              <a class="readme-link" href="https://crutched-programmer.github.io/Makro/" target="_blank">live app ↗</a>
+              <a class="readme-link" href="https://github.com/Crutched-programmer/MAKRO" target="_blank">GitHub ↗</a>
+            </div>
+            <h2>MAKRO — Macropad Firmware Builder</h2>
+            <p>Metro-UI web configurator → HID firmware for Arduino Leonardo macropads.</p>
+            <h3>Hardware</h3>
+            <ul>
+              <li>Arduino Leonardo (native USB HID)</li>
+              <li>Buttons on pins 2–11 → <code>Ctrl+Alt+N</code></li>
+              <li>Feedback LEDs · cartridge ID via 10-pin + 10kΩ pull-downs</li>
+            </ul>
+            <h3>Supported MCUs</h3>
+            <p>Pro Micro · Elite-C · RP2040/Pi Pico · Teensy 2.0 · STM32 Blue Pill · Arduino Nano</p>
+            <h3>Firmware Targets</h3>
+            <p>Arduino HID (32U4) · CircuitPython/KMK · QMK · ZMK</p>
+            <h3>Stack</h3>
+            <p>C++ · Python · aiohttp · HTML/CSS/JS</p>
+          </div>
+        </div>
+
+        <!-- WEBTV -->
+        <div class="pcard reveal">
+          <div class="pcard-header">
+            <span class="pcard-tag tag-web">Web / TV UI</span>
+            <div class="pcard-links">
+              <a class="pcard-link" href="https://crutched-programmer.github.io/WebTV/" target="_blank">live ↗</a>
+              <a class="pcard-link" href="https://github.com/Crutched-programmer/WebTV" target="_blank">repo ↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <h3 class="pcard-title" style="color:var(--blue);">WebTV MK IV</h3>
+            <p class="pcard-desc">Fire TV-style browser launcher. Arrow-key-only nav, hero banner, Discover tab,
+              monochrome SVG tiles, keyboard macros, arrow-combo lock screen.</p>
+            <button class="pcard-expand" onclick="toggleReadme(this)"><span class="arrow">▶</span> README</button>
+          </div>
+          <div class="pcard-readme">
+            <div style="margin-bottom:0.75rem;">
+              <a class="readme-link" href="https://crutched-programmer.github.io/WebTV/" target="_blank">live app ↗</a>
+              <a class="readme-link" href="https://github.com/Crutched-programmer/WebTV" target="_blank">GitHub ↗</a>
+            </div>
+            <h2>WebTV MK IV — TV Launcher</h2>
+            <p>Full TV launcher UI in HTML/CSS/JS — arrow-key-only, no mouse required in performance mode.</p>
+            <h3>Features</h3>
+            <ul>
+              <li>Fire TV-style hero banner + Discover / Store / Settings tabs</li>
+              <li>Monochrome SVG app tiles with pin/unpin + resize</li>
+              <li>Arrow-combo lock screen (4–8 key sequence)</li>
+              <li>Keyboard macro system</li>
+              <li>Favourites, password protection, app installer</li>
+            </ul>
+            <h3>Stack</h3>
+            <p>HTML · CSS · Vanilla JS — zero deps, single file</p>
+          </div>
+        </div>
+
+        <!-- CRUTCH-LOOPER -->
+        <div class="pcard reveal">
+          <div class="pcard-header">
+            <span class="pcard-tag tag-web">Audio / Web</span>
+            <div class="pcard-links">
+              <a class="pcard-link" href="https://github.com/Crutched-programmer/Crutch-Looper" target="_blank">repo
+                ↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <h3 class="pcard-title" style="color:var(--violet);">Crutch-Looper</h3>
+            <p class="pcard-desc">Browser-based loop pedal. Record, layer, play back audio loops live — no DAW, no
+              install, runs fully offline via Web Audio API.</p>
+            <button class="pcard-expand" onclick="toggleReadme(this)"><span class="arrow">▶</span> README</button>
+          </div>
+          <div class="pcard-readme">
+            <h2>Crutch-Looper — Browser Loop Pedal</h2>
+            <h3>Features</h3>
+            <ul>
+              <li>Multi-track looping via Web Audio API</li>
+              <li>Keyboard-driven performance mode</li>
+              <li>Layer overdubbing + per-track mute/unmute</li>
+              <li>Fully offline — no server</li>
+            </ul>
+            <h3>Stack</h3>
+            <p>Vanilla JS · Web Audio API · HTML/CSS — single file</p>
+          </div>
+        </div>
+
+        <!-- WEB AUDIO MIXER -->
+        <div class="pcard reveal">
+          <div class="pcard-header">
+            <span class="pcard-tag tag-web">Audio / Web</span>
+            <div class="pcard-links">
+              <a class="pcard-link" href="https://github.com/Crutched-programmer" target="_blank">repo ↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <h3 class="pcard-title" style="color:var(--blue);">Web Audio Mixer</h3>
+            <p class="pcard-desc">Browser-based mixing desk with Allen &amp; Heath-inspired digianalog UI. Faders, EQ,
+              bus routing — all in Web Audio API, zero plugins.</p>
+            <button class="pcard-expand" onclick="toggleReadme(this)"><span class="arrow">▶</span> README</button>
+          </div>
+          <div class="pcard-readme">
+            <h2>Web Audio Mixer</h2>
+            <h3>Features</h3>
+            <ul>
+              <li>Multi-channel fader control</li>
+              <li>Per-channel EQ with visual frequency response</li>
+              <li>Bus routing + send/return</li>
+              <li>Dark panel, A&amp;H-inspired knob UI</li>
+            </ul>
+            <h3>Stack</h3>
+            <p>Vanilla JS · Web Audio API · HTML/CSS — zero deps</p>
+          </div>
+        </div>
+
+        <!-- SMART GLASSES -->
+        <div class="pcard reveal">
+          <div class="pcard-header">
+            <span class="pcard-tag tag-iot">IoT / HW</span>
+            <div class="pcard-links">
+              <a class="pcard-link" href="https://github.com/Crutched-programmer" target="_blank">repo ↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <h3 class="pcard-title" style="color:var(--sky);">Smart Glasses</h3>
+            <p class="pcard-desc">AI wearable prototype — ESP32 + camera, on-device TFLite object detection, bone
+              conduction audio output, BLE pairing to phone for extended inference.</p>
+            <button class="pcard-expand" onclick="toggleReadme(this)"><span class="arrow">▶</span> README</button>
+          </div>
+          <div class="pcard-readme">
+            <h2>Smart Glasses — AI Wearable</h2>
+            <h3>Hardware</h3>
+            <ul>
+              <li>ESP32 + camera module · bone conduction audio · Li-Po battery</li>
+            </ul>
+            <h3>Software</h3>
+            <ul>
+              <li>TFLite object detection on-device</li>
+              <li>Audio description of detected objects</li>
+              <li>BLE → phone for heavier inference tasks</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label">03 / skills</p>
+      <h2 class="section-title">What I work with</h2>
+      <p class="section-sub">The tools that show up in every project, and the ones I reach for when things get weird.
+      </p>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            alt="Python">
+          <div class="skill-card-name" style="color:#2a5ea8;">Python</div>
+          <div class="skill-card-items">Flask · Streamlit · asyncio · aiohttp · PyInstaller · subprocess</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-w="90" style="background:var(--blue);"></div>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
+            alt="Arduino">
+          <div class="skill-card-name" style="color:#005060;">Arduino / C++</div>
+          <div class="skill-card-items">Leonardo HID · firmware flashing · pull-down resistors · serial comms</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-w="78" style="background:var(--teal);"></div>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript">
+          <div class="skill-card-name" style="color:#7a52b0;">Web Dev</div>
+          <div class="skill-card-items">HTML · CSS · Vanilla JS · Web Audio API · Jinja2</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-w="82" style="background:var(--violet);"></div>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <img class="skill-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+            alt="TensorFlow">
+          <div class="skill-card-name" style="color:#b84d90;">AI / ML</div>
+          <div class="skill-card-items">TensorFlow Lite · PyTorch basics · Sarvam AI · TTS · STT</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-w="74" style="background:var(--pink);"></div>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+            alt="Linux">
+          <div class="skill-card-name" style="color:#005a8a;">Linux / Self-Hosting</div>
+          <div class="skill-card-items">systemd · PulseAudio · inotify · rsync · ngrok</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-w="80" style="background:var(--sky);"></div>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
+            alt="Kotlin">
+          <div class="skill-card-name" style="color:var(--forest);">Android</div>
+          <div class="skill-card-items">Kotlin basics · MacroDroid webhooks · BLE comms</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-w="55" style="background:var(--forest);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label">04 / contact</p>
+      <h2 class="section-title">Let's build something</h2>
+      <div class="contact-grid">
+        <div class="reveal">
+          <p style="color:var(--muted); font-size:0.95rem; margin-bottom:1.5rem; max-width:400px;">Grade 11 student in
+            Chennai, always looking for interesting collabs, hardware projects, or people who think self-hosting
+            everything is a personality trait.</p>
+          <ul class="contact-links">
+            <li>
+              <a href="https://github.com/Crutched-programmer" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                <div>
+                  <div class="contact-lbl">GitHub</div>
+                  <div class="contact-val">Crutched-programmer</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:thyareoptimistic@gmail.com">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--violet)" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                <div>
+                  <div class="contact-lbl">Email</div>
+                  <div class="contact-val">thyareoptimistic@gmail.com</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+                <div>
+                  <div class="contact-lbl">Discord</div>
+                  <div class="contact-val">Crutched_programmer#9040</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="terminal-block">
+            <span style="color:var(--pink);">$</span> cat about.txt<br>
+            <span style="color:var(--border2);">───────────────────────</span><br>
+            <span style="color:var(--violet);">name:</span> Crutched_programmer<br>
+            <span style="color:var(--violet);">location:</span> Chennai, India<br>
+            <span style="color:var(--violet);">grade:</span> 11, CBSE<br>
+            <span style="color:var(--violet);">stack:</span> Python, C++, Web, AI<br>
+            <span style="color:var(--violet);">vibe:</span> ship fast, self-host everything<br>
+            <span style="color:var(--border2);">───────────────────────</span><br>
+            <span style="color:var(--pink);">$</span> <span
+              style="animation:blink 1s infinite; display:inline-block;">█</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    built by <span style="color:var(--pink);">Crutched_programmer</span> · Chennai, India · 2025 · <span
+      style="color:var(--violet);">push.sh && git push</span>
+  </footer>
+
+  <script>
+    /* ASCII Donut */
+    (function () {
+      const c1 = document.getElementById('donut-canvas');
+      const c2 = document.getElementById('donut-canvas2');
+      let A = 0, B = 0, A2 = 1, B2 = 0.5;
+      function donut(t, cols, rows, a, b) {
+        let z = new Array(cols * rows).fill(0), buf = new Array(cols * rows).fill(' ');
+        const sA = Math.sin(a), cA = Math.cos(a), sB = Math.sin(b), cB = Math.cos(b);
+        for (let j = 0; j < 6.28; j += 0.07) {
+          const sJ = Math.sin(j), cJ = Math.cos(j);
+          for (let i = 0; i < 6.28; i += 0.02) {
+            const sI = Math.sin(i), cI = Math.cos(i);
+            const h = cJ + 2, D = 1 / (sI * h * sA + sJ * cA + 5), tx = sI * h * cA - sJ * sA;
+            const x = Math.floor(cols / 2 + (cols * .4) * D * (cI * h * cB - tx * sB));
+            const y = Math.floor(rows / 2 + (rows * .4) * D * (cI * h * sB + tx * cB));
+            const o = x + cols * y;
+            const N = Math.floor(8 * ((sJ * sA - sI * cJ * cA) * cB - sI * cJ * sA - sJ * cA - cI * cJ * sB));
+            if (y > 0 && y < rows && x > 0 && x < cols && D > z[o]) { z[o] = D; buf[o] = '.,-~:;=!*#$@'[Math.max(0, N)]; }
+          }
+        }
+        let out = ''; for (let r = 0; r < rows; r++)out += buf.slice(r * cols, (r + 1) * cols).join('') + '\n';
+        t.textContent = out;
+      }
+      function loop() {
+        donut(c1, 70, 35, A, B); A += 0.07; B += 0.03;
+        donut(c2, 40, 20, A2, B2); A2 += 0.05; B2 += 0.025;
+        requestAnimationFrame(loop);
+      }
+      loop();
+    })();
+
+    /* README expand */
+    function toggleReadme(btn) {
+      const r = btn.closest('.pcard').querySelector('.pcard-readme');
+      const open = r.classList.toggle('open');
+      btn.querySelector('.arrow').textContent = open ? '▼' : '▶';
+    }
+
+    /* Host-it expand */
+    function toggleHostIt(btn) {
+      const p = document.getElementById('hostit-panel');
+      const open = p.classList.toggle('open');
+      btn.querySelector('.arrow').textContent = open ? '▼' : '▶';
+      btn.lastChild.textContent = open ? ' collapse' : ' explore all 12 tools';
+    }
+
+    /* Scroll reveal */
+    const obs = new IntersectionObserver(es => { es.forEach((e, i) => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 55); obs.unobserve(e.target); } }); }, { threshold: .08 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    /* Skill bars */
+    const bObs = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) { e.target.querySelectorAll('.skill-bar').forEach(b => b.style.width = b.dataset.w + '%'); bObs.unobserve(e.target); } }); }, { threshold: .3 });
+    document.querySelectorAll('.skill-card').forEach(el => bObs.observe(el));
+  </script>
+</body>
+
+</html>
