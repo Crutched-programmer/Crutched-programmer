@@ -2,6 +2,7 @@
                                                                                                                   
 <h3 align='center'>I am a grade 11 CBSE student in Chennai, India.<br> 
 AI•Music•Arduino•self-hosting</h3>
+<img height="0" width="0" src='https://github.com/user-attachments/assets/4ef7335d-d6e2-4cc6-9908-529814bafac6'/>
 
 <h2 align='center'>••••Check out my projects👇••••</h2>
 
