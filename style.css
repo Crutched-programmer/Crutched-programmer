@@ -23,7 +23,7 @@ body {
   background: var(--black);
   color: var(--mint);
   overflow-x: hidden;
-  font-family: "Courier New", Consolas, monospace;
+  font: Consolas;
   font-size: 14px;
   line-height: 1.5;
   transition: background-color .2s ease, color .2s ease;
