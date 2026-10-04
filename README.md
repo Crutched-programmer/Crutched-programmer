@@ -1,3 +1,6 @@
+<img width="2170" height="374" alt="ascii" src="https://github.com/user-attachments/assets/4cabadf1-0f32-4700-bd9c-cae1700cc2b5" />
+
+
 <h1 align='center'><a href="https://crutched-programmer.github.io/Crutched-programmer/">Greetings..I'm Crutched_programmer#9040</a></h1>                                                          
                                                                                                                   
 <h3 align='center'>I am a grade 11 CBSE student in Chennai, India.<br> 
