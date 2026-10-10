@@ -1,4 +1,5 @@
-<img width="800" height="450" alt="typewriter-sashant-sankar (1)" src="https://github.com/user-attachments/assets/c7ecab31-0953-4f04-b391-ffa323209ea5" align="center"/>
+<img width="800" height="450" alt="terminalscan-sashant-sankar" src="https://github.com/user-attachments/assets/3acbe896-a0bb-4c01-b1be-d8cf9bc00d4e" />
+
 
 
 <h1 align='center'><a href="https://crutched-programmer.github.io/Crutched-programmer/">Greetings..I'm Crutched_programmer#9040</a></h1>                                                          
