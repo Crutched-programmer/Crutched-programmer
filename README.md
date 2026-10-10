@@ -1,4 +1,4 @@
-<img width="800" height="450" alt="terminalscan-sashant-sankar" src="https://github.com/user-attachments/assets/3acbe896-a0bb-4c01-b1be-d8cf9bc00d4e" />
+<img width="800" height="150" alt="terminalscan-sashant-sankar" src="https://github.com/user-attachments/assets/3acbe896-a0bb-4c01-b1be-d8cf9bc00d4e" />
 
 
 
