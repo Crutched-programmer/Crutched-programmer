@@ -1,8 +1,4 @@
-<p align="center"><img halign="center" width="720" height="128" alt="led-1791737738578" src="https://github.com/user-attachments/assets/6438cac2-0fdf-442a-be2b-17747aaeb0c9" /></p>
-
-
-
-
+<p align="center">  <img width="720" height="128" alt="led-1791739216871" src="https://github.com/user-attachments/assets/378f5f93-0a61-484e-8180-d51841eef101" /></p>
 
 <h1 align='center'><a href="https://crutched-programmer.github.io/Crutched-programmer/">Greetings..I'm Crutched_programmer#9040</a></h1>                                                          
                                                                                                                   
